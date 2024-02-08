@@ -45,3 +45,54 @@ button {
 button:hover {
     background-color: #1a811a;
 }
+.loader{
+    width: 300px;
+    height: 300px;
+    border: 30px solid black;
+    border-top: 30px solid #32CD32;
+    border-radius: 50%;
+    position: relative;
+    animation: spin 1s linear infinite;
+}
+.loader_box{
+    position: relative;
+    background-color: #fff;
+    height: 100vh;
+    margin-top: -100px;
+    width: 100%;    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s ease;
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.317);
+
+}
+.loader_text{
+    font-size: 24px;
+    transform: translateY(-150px);
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+@media (max-width:1200px) {
+    .list,.box{
+        margin: 50px 203px 0;
+    }
+    .list{
+        margin-top: 0;
+        margin-left: 203px;
+        width: 746px;
+    }
+}
